@@ -1,0 +1,32 @@
+$black: #000000;
+$white: #FFFFFF;
+$ghostWhite: #E8E9F3;
+
+$primary: #4F7CAC;
+$secondary: #E54B4B;
+
+$background: $ghostWhite;
+$foreground: $black;
+
+:root {
+  --background: $background;
+  --foreground: $foreground;
+}
+
+html {
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+  }
+
+  &[data-theme="dark"] body {
+    --background: #0d1117;
+    --foreground: #FFFFFF;
+  }
+
+  &[data-theme="gray"] body {
+    --background: #22272e;
+    --foreground: #FFFFFF;
+  }
+}
