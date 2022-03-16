@@ -39,7 +39,9 @@ export class AuthService extends ApiResourceService<IUser> {
     private _userStorageService: UserStorageService,
   ) {
     super(_http);
-    this._loginState = new BehaviorSubject<boolean>(false);
+
+    const isLoggedIn = !!this._jwtStorageService.get();
+    this._loginState = new BehaviorSubject<boolean>(isLoggedIn);
     this.isLoggedIn$ = this._loginState.asObservable();
   }
 

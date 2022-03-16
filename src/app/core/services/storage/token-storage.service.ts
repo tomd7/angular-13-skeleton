@@ -78,7 +78,7 @@ export abstract class TokenStorageService implements IStorage {
    * @param value The token expiration
    */
   protected set _expiration(value: number) {
-    localStorage.setItem(this._keyToken, String(value));
+    localStorage.setItem(this._keyExpiration, String(value));
   }
 
 }
