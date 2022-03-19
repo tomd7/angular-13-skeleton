@@ -15,8 +15,8 @@ export class TitleService {
   private readonly _appName: string = environment.app.name;
   private readonly _separator: string = '|';
 
-  private _fullTitleChange$ = new BehaviorSubject<string>(this._appName);
-  private _titleChange$ = new BehaviorSubject<string>(this._appName);
+  private _fullTitleChange$ = new BehaviorSubject<string>('');
+  private _titleChange$ = new BehaviorSubject<string>('');
 
   public title$: Observable<string> = this._titleChange$.asObservable();
 
@@ -57,7 +57,9 @@ export class TitleService {
    * @param title New title
    */
   public set(title: string) {
+    this._titleChange$.next(title);
     title = this._formatTitle(title);
+    this._fullTitleChange$.next(title);
     this._title.setTitle(title);
   }
 
@@ -74,14 +76,14 @@ export class TitleService {
    * @param route Route to get the title from
    */
   private _getRouteTitle(route: ActivatedRoute | null): string | undefined {
-    while (this._route) {
-      if (this._route.firstChild) {
-        this._route = this._route.firstChild;
+    while (route) {
+      if (route.firstChild) {
+        route = route.firstChild;
       } else if (
-        this._route.snapshot.data &&
-        this._route.snapshot.data['pageTitle']
+        route.snapshot.data &&
+        route.snapshot.data['pageTitle']
       ) {
-        return this._route.snapshot.data['pageTitle'] as string;
+        return route.snapshot.data['pageTitle'] as string;
       } else {
         return undefined;
       }
