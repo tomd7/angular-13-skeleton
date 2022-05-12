@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {TokenStorageService} from './token-storage.service';
-import {LocalStorageKey} from '../../enums/local-storage-key';
-import {Jwt} from '../../models/jwt';
+import { Injectable } from '@angular/core';
+import { TokenStorageService } from './token-storage.service';
+import { LocalStorageKey } from '../../enums/local-storage-key';
+import { Jwt } from '../../models/jwt';
 
 @Injectable({
   providedIn: 'root'

@@ -1,4 +1,4 @@
-import {IUser} from '../interfaces/i-user';
+import { IUser } from '../interfaces/i-user';
 
 export class User implements IUser {
 

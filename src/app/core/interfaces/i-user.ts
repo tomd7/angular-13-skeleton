@@ -1,4 +1,4 @@
-import {IApiResource} from './i-api-resource';
+import { IApiResource } from './i-api-resource';
 
 export interface IUser extends IApiResource {
 

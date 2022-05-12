@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {StorageService} from './storage.service';
-import {LocalStorageKey} from '../../enums/local-storage-key';
-import {Theme} from '../../enums/theme';
+import { Injectable } from '@angular/core';
+import { StorageService } from './storage.service';
+import { LocalStorageKey } from '../../enums/local-storage-key';
+import { Theme } from '../../enums/theme';
 
 @Injectable({
   providedIn: 'root'

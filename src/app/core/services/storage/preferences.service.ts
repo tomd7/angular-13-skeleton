@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {StorageService} from './storage.service';
-import {LocalStorageKey} from '../../enums/local-storage-key';
-import {AssociativeArray} from '../../types/associative-array';
+import { Injectable } from '@angular/core';
+import { StorageService } from './storage.service';
+import { LocalStorageKey } from '../../enums/local-storage-key';
+import { AssociativeArray } from '../../types/associative-array';
 
 @Injectable({
   providedIn: 'root'

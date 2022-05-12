@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {LocalStorageKey} from '../../enums/local-storage-key';
-import {Token} from '../../types/token';
-import {IStorage} from '../../interfaces/i-storage';
+import { Injectable } from '@angular/core';
+import { LocalStorageKey } from '../../enums/local-storage-key';
+import { Token } from '../../types/token';
+import { IStorage } from '../../interfaces/i-storage';
 
 @Injectable({
   providedIn: 'root'

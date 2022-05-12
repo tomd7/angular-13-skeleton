@@ -1,5 +1,5 @@
-import {AssociativeArray} from '../types/associative-array';
-import {IApiPlatformResource} from '../interfaces/i-api-platform-resource';
+import { AssociativeArray } from '../types/associative-array';
+import { IApiPlatformResource } from '../interfaces/i-api-platform-resource';
 
 export abstract class ApiPlatformResource implements IApiPlatformResource {
 

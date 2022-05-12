@@ -1,4 +1,4 @@
-import {Time} from '../enums/time';
+import { Time } from '../enums/time';
 
 export class Jwt {
 

@@ -1,13 +1,13 @@
-import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {BehaviorSubject, Observable, tap} from 'rxjs';
-import {JwtStorageService} from './storage/jwt-storage.service';
-import {IUser} from '../interfaces/i-user';
-import {ApiResourceService} from './api-resource.service';
-import {UserStorageService} from './storage/user-storage.service';
-import {LoginResponse} from '../types/login-response';
-import {UserRole} from '../enums/user-role';
-import {Jwt} from '../models/jwt';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, Observable, tap } from 'rxjs';
+import { JwtStorageService } from './storage/jwt-storage.service';
+import { IUser } from '../interfaces/i-user';
+import { ApiResourceService } from './api-resource.service';
+import { UserStorageService } from './storage/user-storage.service';
+import { LoginResponse } from '../types/login-response';
+import { UserRole } from '../enums/user-role';
+import { Jwt } from '../models/jwt';
 
 @Injectable({
   providedIn: 'root'

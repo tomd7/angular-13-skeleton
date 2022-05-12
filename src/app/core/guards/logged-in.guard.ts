@@ -1,8 +1,8 @@
-import {Injectable} from '@angular/core';
-import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot} from '@angular/router';
-import {map, Observable} from 'rxjs';
-import {AuthService} from '../services/auth.service';
-import {JwtStorageService} from '../services/storage/jwt-storage.service';
+import { Injectable } from '@angular/core';
+import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from '@angular/router';
+import { map, Observable } from 'rxjs';
+import { AuthService } from '../services/auth.service';
+import { JwtStorageService } from '../services/storage/jwt-storage.service';
 
 @Injectable({
   providedIn: 'root'

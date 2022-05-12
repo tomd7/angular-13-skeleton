@@ -1,8 +1,8 @@
-import {Injectable} from '@angular/core';
-import {environment} from '../../../environments/environment';
-import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
-import {Title} from '@angular/platform-browser';
-import {BehaviorSubject, filter, map, merge, Observable, tap} from 'rxjs';
+import { Injectable } from '@angular/core';
+import { environment } from '../../../environments/environment';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+import { BehaviorSubject, filter, map, merge, Observable, tap } from 'rxjs';
 
 /**
  * @link https://www.thisdot.co/blog/how-to-update-the-application-title-based-on-routing-changes-in-angular
